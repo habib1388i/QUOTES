@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="txm-pD-3vu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HOME-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QUOTES" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zsw-aU-qTb">
+                                <rect key="frame" x="33" y="236" width="308" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="29"/>
+                                <state key="normal" title="QUOTES FAMOUS">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AHh-g5-hNR">
+                                <rect key="frame" x="168" y="318" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="home">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FdA-bF-yYh" kind="show" id="6bW-Nj-sIR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="HOME" id="9JW-RG-o1a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OlH-wt-SIb">
+            <objects>
+                <viewController id="FdA-bF-yYh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="R46-eu-NDd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="quotes" translatesAutoresizingMaskIntoConstraints="NO" id="dX0-js-2sk">
+                                <rect key="frame" x="16" y="82" width="343" height="565"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKb-dQ-h3g">
+                                <rect key="frame" x="0.0" y="149" width="204" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="STEVEN HAWKING">
+                                    <color key="titleColor" red="0.5478224515309793" green="0.37846528243296357" blue="0.14938633579954072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r8L-a0-3Zf" kind="show" id="nTY-bX-Rdh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZt-fI-P1s">
+                                <rect key="frame" x="157" y="184" width="196" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="14"/>
+                                <state key="normal" title="BILL GATES">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="U3f-fC-O6m" kind="show" id="La7-C3-JKu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53i-hl-Kri">
+                                <rect key="frame" x="23" y="222" width="195" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="21"/>
+                                <state key="normal" title="ALBERT ENSTEIN">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8aj-Gj-IrX" kind="show" id="JbE-7M-HbF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ymd-OM-pO4">
+                                <rect key="frame" x="74" y="260" width="301" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="19"/>
+                                <state key="normal" title="GEORGE SANTAYANA Q">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Onx-rJ-lrn" kind="show" id="fFZ-2q-ReS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyW-Sf-nxD">
+                                <rect key="frame" x="-23" y="306" width="241" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="18"/>
+                                <state key="normal" title="STEVE JOBS">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oj9-Gk-KlO" kind="show" id="aST-Uw-E5i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ffy-Bx-hdx">
+                                <rect key="frame" x="157" y="335" width="214" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="18"/>
+                                <state key="normal" title="MUHAMMAD ALI">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PP9-vi-CSk" kind="show" id="sOI-K5-lGl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1W1-f7-Shg">
+                                <rect key="frame" x="23" y="379" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="18"/>
+                                <state key="normal" title="AMBRAHAM LINCOLIN">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X8i-2n-cUJ" kind="show" id="9KZ-fz-S8j"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvE-tU-bC9">
+                                <rect key="frame" x="169" y="417" width="177" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="MICHAEL JACKSON">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YV1-tR-ggr" kind="show" id="SXW-1x-ir4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Btq-R9-gr9">
+                                <rect key="frame" x="32" y="461" width="227" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="17"/>
+                                <state key="normal" title="LORD ROBEN BODEN POWEL">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="mGx-13-iZz" kind="show" id="YRo-FD-ONC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpn-Y3-U5f">
+                                <rect key="frame" x="177" y="509" width="182" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Italic" family="Hoefler Text" pointSize="18"/>
+                                <state key="normal" title="BOB MARLEY">
+                                    <color key="titleColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <segue destination="4JV-wY-1Nv" kind="show" id="Zro-k5-tQG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iMc-8G-JFU" firstAttribute="trailing" secondItem="dX0-js-2sk" secondAttribute="trailing" constant="16" id="2Eo-cz-FaX"/>
+                            <constraint firstItem="dX0-js-2sk" firstAttribute="top" secondItem="iMc-8G-JFU" secondAttribute="top" constant="18" id="4WQ-2x-AMd"/>
+                            <constraint firstItem="iMc-8G-JFU" firstAttribute="bottom" secondItem="dX0-js-2sk" secondAttribute="bottom" constant="20" id="5B6-Vl-pt2"/>
+                            <constraint firstItem="dX0-js-2sk" firstAttribute="leading" secondItem="iMc-8G-JFU" secondAttribute="leading" constant="16" id="vQK-Pw-Gjw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iMc-8G-JFU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Tv-u2-8U6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="900"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BSd-id-2Uy">
+            <objects>
+                <navigationController id="txm-pD-3vu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lNn-lj-lx5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ymu-LI-Ehi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xm-pe-qud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K2r-LI-WPD">
+            <objects>
+                <viewController id="r8L-a0-3Zf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLm-Eg-Fuo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="steven hawking" translatesAutoresizingMaskIntoConstraints="NO" id="yXw-Il-w0P">
+                                <rect key="frame" x="28" y="79" width="318" height="308"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-CH-ntB">
+                                <rect key="frame" x="28" y="412" width="318" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- "Scientists have become the bearers of the torch of discovery in our quest for knowledge."
+- "Work gives you meaning and purpose and life is empty without it."
+- "The past, like the future, is indefinite and exists only as a spectrum of possibilities."
+- "If aliens visit us, the outcome would be much as when Columbus landed in America, which didn't turn out well for the Native Americans."
+- "With genetic engineering, we will be able to increase the complexity of our DNA, and improve the human race. But it will be a slow process, because one will have to wait about 18 years to see the effect of changes to the genetic code."
+- "Science is beautiful when it makes simple explanations of phenomena or connections between different observations. Examples include the double helix in biology and the fundamental equations of physics."
+- "I believe alien life is quite common in the universe, although intelligent life is less so. Some say it has yet to appear on planet Earth."
+- "I was never top of the class at school, but my classmates must have seen potential in me, because my nickname was 'Einstein."
+- "I was not a good student. I did not spend much time at college; I was too busy enjoying myself."
+- “One, remember to look up at the stars and not down at your feet. Two, never give up work. Work gives you meaning and purpose and life is empty without it. Three, if you are lucky enough to find love, remember it is there and don't throw it away.” </mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="O8O-HM-FaQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gtt-1I-ot8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="1952"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nNO-jU-MCJ">
+            <objects>
+                <viewController id="U3f-fC-O6m" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4At-uJ-03b">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bill gates" translatesAutoresizingMaskIntoConstraints="NO" id="nXT-Z0-02B">
+                                <rect key="frame" x="16" y="88" width="343" height="318"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-tH-drs">
+                                <rect key="frame" x="16" y="414" width="343" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- "Success is a lousy teacher. It seduces smart people into thinking they can't lose."
+- "It's fine to celebrate success but it is more important to heed the lessons of failure."
+- "The Internet is becoming the town square for the global village of tomorrow."
+- "We all need people who will give us feedback. That's how we improve."
+- "The first rule of any technology used in a business is that automation applied to an efficient operation will magnify the efficiency. The second is that automation applied to an inefficient operation will magnify the inefficiency."
+- "I failed in some subjects in exam, but my friend passed in all. Now he is an engineer in Microsoft and I am the owner of Microsoft."
+- "I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it."                                       - "As we look ahead into the next century, leaders will be those who empower others.         - Success is a lousy teacher. It seduces smart people into thinking they can’t lose."
+- "our most unhappy customers are your greatest source of learning."</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="8if-Lh-tWQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E6q-AP-j0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="1952"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OeW-1u-jG2">
+            <objects>
+                <viewController id="8aj-Gj-IrX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Ac-mb-SN9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="albert entain" translatesAutoresizingMaskIntoConstraints="NO" id="TuL-Da-Q13">
+                                <rect key="frame" x="16" y="81" width="343" height="316"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gzU-YO-M5Q">
+                                <rect key="frame" x="16" y="405" width="343" height="242"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.”
+- "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle."
+- "I am enough of an artist to draw freely upon my imagination. Imagination is more important than knowledge. Knowledge is limited. Imagination encircles the world."
+- "If you can't explain it to a six year old, you don't understand it yourself."
+- "If you want your children to be intelligent, read them fairy tales. If you want them to be more intelligent, read them more fairy tales."
+- "Logic will get you from A to Z; imagination will get you everywhere." 
+- "Life is like riding a bicycle. To keep your balance, you must keep moving."
+- "Anyone who has never made a mistake has never tried anything new."
+- "I speak to everyone in the same way, whether he is the garbage man or the president of the university.”
+- 'Never memorize something that you can look up."
+</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="ayt-ew-yyP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8h-Aq-54V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="1952"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Um8-9H-rUN">
+            <objects>
+                <viewController id="Onx-rJ-lrn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Taj-Xj-K0P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="george santan" translatesAutoresizingMaskIntoConstraints="NO" id="cQH-4A-8kZ">
+                                <rect key="frame" x="16" y="79" width="343" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y1y-mG-av6">
+                                <rect key="frame" x="16" y="414" width="343" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">- “Sanity is a madness put to good uses.”
+- “Those who cannot remember the past, are condemned to repeat it.”
+- “The world is not respectable; it is mortal, tormented, confused, deluded forever; but it is shot through with beauty, with love, with glints of courage and laughter; and in these, the spirit blooms timidly, and struggles to the light amid the thorns.”
+- “A child educated only at school is an uneducated child.”
+- “My atheism, like that of Spinoza, is true piety towards the universe and denies only gods fashioned by men in their own image, to be servants of their human interests.”
+- “To be interested in the changing seasons is . . . a happier state of mind than to be hopelessly in love with spring.”
+- “Chaos is a name for any order that produces confusion in our minds.”
+- “To be happy you must have taken the measure of your powers, tasted the fruits of your passion, and learned your place in the world.”
+- “There are books in which the footnotes, or the comments scrawled by some reader's hand in the margin, are more interesting than the text. The world is one of those books.”
+- “Knowledge of what is possible is the beginning of happiness.” 
+- “Memory... is an internal rumor.” 
+</string>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="daJ-Ic-zaq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fou-oR-6hC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="1952"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4An-Lb-Vqf">
+            <objects>
+                <viewController id="oj9-Gk-KlO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MNr-zc-l5k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="steve jobs" translatesAutoresizingMaskIntoConstraints="NO" id="6sZ-0D-txA">
+                                <rect key="frame" x="16" y="78" width="343" height="339"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DLq-xK-16m">
+                                <rect key="frame" x="16" y="425" width="343" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">- "Great things in business are never done by one person. They're done by a team of people."
+- "Great things in business are never done by one person. They're done by a team of people."
+- "Your time is limited, so don't waste it living someone else's life. Don't be trapped by dogma - which is living with the results of other people's thinking. Don't let the noise of others' opinions drown out your own inner voice. And most important, have the courage to follow your heart and intuition."                              - "Innovation distinguishes between a leader and a follower."
+- "Be a yardstick of quality. Some people aren't used to an environment where excellence is expected. "
+- </string>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="jmD-9m-hKJ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUZ-sr-QSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="1242.7286356821589"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2bZ-Vw-m9Q">
+            <objects>
+                <viewController id="4JV-wY-1Nv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Xw-z4-Bdk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bob marley" translatesAutoresizingMaskIntoConstraints="NO" id="Pox-yC-mNy">
+                                <rect key="frame" x="16" y="77" width="343" height="317"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="58w-Mp-uUw">
+                                <rect key="frame" x="16" y="402" width="343" height="245"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- “Enjoy life now. This is not a rehearsal.”
+- “Don’t trust people whose feelings change with time. Trust people whose feelings remain the same, even when the time changes.”
+- “If she’s amazing, she won’t be easy. If she’s easy, she won’t be amazing. If she’s worth it, you won’t give up. If you give up, you’re not worthy. … Truth is, everybody is going to hurt you; you just gotta find the ones worth suffering for.”
+- “Live for yourself and you will live in vain; live for others and you will live again.”
+- “Just because you are happy, it does not mean that the day is perfect, but that you have looked beyond its imperfections.”
+- “Don’t complicate your mind.”
+- “Don’t gain the world and lose your soul, wisdom is better than silver or gold.”
+- “The biggest coward of a man is to awaken the love of a woman without the intention of loving her.”
+- “You just can’t live in that negative way… make way for the positive day.”
+- “The people who were trying to make this world worse are not taking the day off. Why should I?”
+- “Money is numbers and numbers never end. If it takes money to be happy, your search for happiness will never end.”
+- “You say you love rain, but you use an umbrella to walk under it. You say you love sun, but you seek shelter when it is shining. You say you love wind, but when it comes you close your windows. So that’s why I’m scared when you say you love me.”
+
+</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="rZT-hZ-ACR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="te5-h1-Dqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="-134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iZl-dk-bIR">
+            <objects>
+                <viewController id="mGx-13-iZz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ouQ-V3-CAw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="boden powel" translatesAutoresizingMaskIntoConstraints="NO" id="Tp2-KI-Qbm">
+                                <rect key="frame" x="16" y="78" width="343" height="312"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-gU-0s4">
+                                <rect key="frame" x="16" y="398" width="343" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="O3X-PC-afg">
+                                <rect key="frame" x="16" y="398" width="343" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- “A boy on joining wants to begin Scouting right away."
+-  "A week of camp life is worth six months of theoretical teaching in the meeting room."
+- “The open-air is the real objective of Scouting and the key to its success."
+- “We must change boys from a 'what can I get' to a 'what can I give' attitude."
+-  "Boys can see adventure in a dirty old duck puddle, and if the Scoutmaster is a boys’ man he can see it too."
+-  "The real way to gain happiness is to give it to others."
+- “There is no teaching to compare with example."
+-  "A boy is naturally full of humor."
+-  "A boy is not a sitting-down animal."
+-  "A fisherman does not bait his hook with food he likes. He uses food the fish likes. So with boys."
+</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="paX-p9-KDh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVT-eS-NKf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qcn-xh-9gz">
+            <objects>
+                <viewController id="X8i-2n-cUJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5P0-vr-oaj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abraham lincolin" translatesAutoresizingMaskIntoConstraints="NO" id="AdD-ho-q9B">
+                                <rect key="frame" x="16" y="82" width="343" height="335"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="J5B-81-zsM">
+                                <rect key="frame" x="16" y="425" width="343" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- “Things may come to those who wait, but only the things left by those who hustle.”
+- “Leave nothing for tomorrow which can be done today.”
+- “Nearly all men can stand adversity, but if you want to test a man’s character, give him power.”
+- “The best way to predict your future is to create it.”
+- “I do the very best I know how, the very best I can, and I mean to keep on doing so until the end.”
+- “Those who look for the bad in people will surely find it.”
+- “Every man’s happiness is his own responsibility.”
+- “The best thing about the future is that it comes one day at a time.”
+- “Whenever I hear anyone arguing for slavery, I feel a strong impulse to see it tried on him personally.”
+- “In the end, it’s not the years in your life that count. It’s the life in your years.”
+- “That some achieve great success, is proof to all that others can achieve it as well.”
+- “I am not bound to win, but I am bound to be true. I am not bound to succeed, but I am bound to live up to what light I have.”
+</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="9mA-fS-0aL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Hz-wM-lAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2513" y="-134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0jr-MF-Iy3">
+            <objects>
+                <viewController id="YV1-tR-ggr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XtD-RD-n74">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="micheal jakson" translatesAutoresizingMaskIntoConstraints="NO" id="0oM-Nb-UoE">
+                                <rect key="frame" x="16" y="77" width="343" height="321"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Uk-EK-7u9">
+                                <rect key="frame" x="16" y="426" width="343" height="221"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- “In a world filled with hate, we must still dare to hope. In a world filled with anger, we must still dare to comfort. In a world filled with despair, we must still dare to dream. And in a world filled with distrust, we must still dare to believe.” 
+- “If you enter this world knowing you are loved and you leave this world knowing the same, then everything that happens in between can be dealt with.” 
+- “Lies run sprints, but the truth runs marathons.” 
+- “We have to heal our wounded world. The chaos, despair, and senseless destruction we see today are a result of the alienation that people feel from each other and their environment.” 
+- “When they say the sky's the limit to me that's really true” 
+- “I’m starting with the man in the mirror,
+        I'm asking him to change his ways;
+        And no message could have been any clearer,
+        If you wanna make the world a better place,
+        Take a look at yourself, and then make a change!” 
+- “To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?” 
+- “People ask me how I make music. I tell them I just step into it. It's like stepping into a river and joining the flow. Every moment in the river has its song.” 
+- “Consciousness expresses itself through creation. This world we live in is the dance of the creator. Dancers come and go in the twinkling of an eye but the dance lives on. On many an occasion when I am dancing, I have felt touched by something sacred.In those moments, I felt my spirit soar and become one with everything that exists. 
+
+        I become the stars and the moon. I become the lover     and the beloved. I become thevictor and the vanquished. I become the master and the slave. I become the singer and the song. I become the knower and the known. I keep on dancing then it is the eternal 
+dance or creation. The creator and creation merge into one wholeness of joy. I keep on dancing...and dancing...and dancing. Until there is only...the dance.” 
+
+
+</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="WTr-pN-RcN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T9w-Qs-Ino" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1649" y="-134"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ep4-NJ-qob">
+            <objects>
+                <viewController id="PP9-vi-CSk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u57-cq-0f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="muhammad ali" translatesAutoresizingMaskIntoConstraints="NO" id="xNO-9f-FY3">
+                                <rect key="frame" x="16" y="77" width="343" height="356"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QQ0-4R-Jw6">
+                                <rect key="frame" x="16" y="441" width="343" height="206"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">- "He who is not courageous enough to take risks will accomplish nothing in life."
+- "I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion."              - "Float like a butterfly, sting like a bee."
+- "Service to others is the rent you pay for your room here on earth."
+- "I believe in the religion of Islam. I believe in Allah and peace." 
+- "It's lack of faith that makes people afraid of meeting challenges, and I believed in myself."
+- "It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe."
+- "Rivers, ponds, lakes and streams - they all have different names, but they all contain water. Just as religions do - they all contain truths."
+- "Rivers, ponds, lakes and streams - they all have different names, but they all contain water. Just as religions do - they all contain truths."
+- "It's just a job. Grass grows, birds fly, waves pound the sand. I beat people up."
+- "Silence is golden when you can't think of a good answer."</mutableString>
+                                <color key="textColor" red="0.54782245149999997" green="0.37846528239999999" blue="0.14938633579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036187341370000001" green="0.036187341370000001" blue="0.036187341370000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="GwU-Qi-Nb0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IWT-SD-gS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2512.8000000000002" y="572.56371814092961"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abraham lincolin" width="201" height="251"/>
+        <image name="albert entain" width="640" height="877"/>
+        <image name="bill gates" width="293" height="172"/>
+        <image name="bob marley" width="480" height="349"/>
+        <image name="boden powel" width="194" height="259"/>
+        <image name="george santan" width="262" height="394"/>
+        <image name="micheal jakson" width="194" height="259"/>
+        <image name="muhammad ali" width="201" height="251"/>
+        <image name="quotes" width="183" height="275"/>
+        <image name="steve jobs" width="600" height="408"/>
+        <image name="steven hawking" width="293" height="172"/>
+    </resources>
+</document>
